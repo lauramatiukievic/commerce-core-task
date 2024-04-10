@@ -1,0 +1,257 @@
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+$font-family-sofia-pro: 'Sofia Pro', sans-serif;
+$form-fields-text-color: #BDBDBD;
+$form-fields-border-color: #E0E0E0;
+$form-titles-color: #333333;
+.customer-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.customer-info input {
+    border: 1px solid $form-fields-border-color;
+    border-radius: 3px;
+    width: 288px;
+    height: 48px;
+   
+}
+.customer-title{
+    margin-top:30px;
+    margin-bottom: 0px;
+    line-height: 19.6px;
+}
+.required-info{
+color:$form-fields-text-color;
+font-family: $font-family-sofia-pro;
+font-size: 12px;
+line-height:   16px;
+}
+
+ .shipping-title, .payment-title{
+    margin-top:26px;
+    margin-bottom:1rem;
+    line-height: 19.6px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.address input {
+    width: max-content;
+}
+input,  button, select {
+    border: 1px solid $form-fields-border-color;
+    border-radius: 3px;
+    padding-left: 12px;
+    color:$form-fields-text-color;
+    font-family: $font-family-sofia-pro;
+}
+input::placeholder{
+    color:$form-fields-text-color;
+    font-family: $font-family-sofia-pro;
+}
+select, input{
+    height: 48px;
+    width: 112px;
+}
+
+.about-live, .country, .region {
+    display: flex;
+    flex-direction: column;
+   
+}
+.live-place {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.submit-order, .address input {
+    width: 592px;
+}
+.country, .region{
+    width: 202px;
+}
+.postal-code input {
+    width: 158px;
+}
+h2, h3 {
+    font-size: 14px;
+    color: $form-titles-color;
+    font-family: 'Work Sans', sans-serif;
+}
+.credit-card-title{
+   font-weight: 400;
+   margin-left: 16px;
+   margin: 18px  16px;
+   line-height: 19.6px;
+}
+.about-card{
+    border: 1px solid $form-fields-border-color;
+    border-radius: 6px;
+    
+}
+.about-card h2{
+    margin-left: 1rem;
+}
+.payments-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    gap: 1rem;
+    border-top: 1px solid $form-fields-border-color;
+    border-radius: 0 0 5px 5px
+}
+.card-number input {
+    width: 560px;
+}
+.card-number{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.card-info{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.region, .country {
+    position: relative;
+  }
+  
+  .region label, .country label {
+    position: absolute;
+    top:5px;
+    left: 13px;
+    color: #666;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .region select, .country select {
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    padding-top: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M3%205.5L8%2010.5L13%205.5%22%20stroke%3D%22%23828282%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1em auto;
+  }
+  
+  .region select:focus,.country select:focus {
+    outline: none;
+    border-color: #666;
+  }
+
+  .error-message  {
+    color: red;
+    font-size: 10px;
+    margin-top: 2px;
+  }
+
+  .submit-order{
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 2rem;
+    background-color: #009900; 
+  color: white; 
+  padding: 15px 30px; 
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.07em;
+  height: 56px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(67, 40, 16, 0.24); 
+  transition: box-shadow 0.3s ease-in-out;
+  }
+  .address,.postal-code,.card-number, .month-year, .cvv-number{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .card-number input, .month-year input, .cvv-number input{
+    font-size: 14px;
+  }
+  .logo-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    height: 56px;
+  }
+  .logo-content img{
+    width: 87px;
+    height: 49px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  @media (max-width: 640px) {
+    .content{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .custom-info, .payment-info{
+        width: auto;
+    }
+    .customer-info, .live-place{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .submit-order, .address input ,.about-card {
+        width: 298px 
+    }
+    input, select{
+        width: 298px !important;
+    }
+
+    .month-year input, .cvv-number input{
+        width: 125px !important;
+    }
+    .card-number input{
+        width: 266px !important;
+    }
+    .logo-content img{
+        width: 69.72px;
+        height: 39.38px;
+
+    }
+    .customer-info{
+        margin-top: 15px;
+    }
+    .customer-title{
+        margin-top: 20px;
+    }
+    .shipping-title, .payment-title{
+        margin-top: 24px;
+    }
+    .logo-content{
+        margin-top: 27px;
+        margin-bottom: 54px;
+    }
+    .submit-order{
+        height: 48px;
+      
+    }
+    .form-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .region-label .country-label{
+        font-weight: 500;
+    }
+   
+    }
