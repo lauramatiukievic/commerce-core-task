@@ -1,0 +1,145 @@
+$font-family-sofia-pro: 'Sofia Pro', sans-serif;
+$remove-items-text-color: #DC624E;
+
+.items-content{
+    margin-left: 71px;
+    margin-top: 88px;
+    margin-right: 150px;
+}
+@media  (max-width: 1440px) and (min-width: 1074px) {
+    .items-content {
+      margin-left: calc((100vw - 1219px) / 2);
+      margin-right: calc((100vw - 1219px) / 2);
+      margin-left: max(15px, calc((100vw - 1219px) / 2));
+      margin-right: max(15px, calc((100vw - 1219px) / 2));
+    }
+  }
+
+.items-image{
+    width: 72px;
+    height: 72px;
+    background-color: #F8F1EB;
+}
+.three{
+    margin-bottom: 1.5rem;
+}
+.one{
+    margin: 1.5rem 0px;
+}
+.product-with-delete{
+display: flex;
+flex-direction: column;
+}
+.multi-pants, .single-pants{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+    width: 375px
+}
+.cost, .about-cost{
+    display: flex;
+    flex-direction: row;
+}
+.about-cost{
+align-items: baseline;
+}
+.cost{
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+.total-title{
+    color: #828282;
+    font-size: 18px;
+    font-family: $font-family-sofia-pro;
+}
+.currency{
+    color: #000000;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $font-family-sofia-pro;
+    margin-right: 1rem;
+}
+.total-price{
+    font-size: 24px;
+    font-family: $font-family-sofia-pro;
+}
+ .product-with-delete{
+    margin-left: 2rem;
+    font-family: $font-family-sofia-pro;
+    font-size: 16px;
+    color: #333333;
+}
+.product-three-cost, .product-one-cost{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.product-cost{
+    font-family: $font-family-sofia-pro;
+    line-height: 26px;
+    font-size: 16px;
+}
+.delete-item{
+    color: $remove-items-text-color;
+    font-family: $font-family-sofia-pro;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    margin-top: 1.5rem;
+}
+.delete-item-three{
+    display:none
+}
+@media (max-width: 1074px){
+    .items-content{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .multi-pants, .single-pants{
+        width: auto;
+    }
+    .items-content{
+        margin-top: 0;
+        padding-top: 12px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .total-title{
+        font-size: 16px;
+        line-height: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 640px){
+    .items-image{
+        width: 58px;
+        height: 58px;
+    }
+
+    .cost{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .three{
+        margin-bottom: 15px;
+    }
+    .one{
+        margin: 15px 0px;
+    }
+
+    .delete-item-three{
+        color: $remove-items-text-color;
+        font-family: $font-family-sofia-pro;
+        font-size: 10px;
+        line-height: 12px;
+        position: absolute !important;
+        margin-top: 1.5rem;
+        display: flex;
+
+    }
+
+}
