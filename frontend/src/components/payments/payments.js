@@ -25,6 +25,7 @@ const Payments = ({ countries, regions }) => {
             toast.error('Order submission failed.')
         }
     };
+    const logos = [NortonSecure, VeriSign, McAfee, Comodo]
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -104,10 +105,9 @@ const Payments = ({ countries, regions }) => {
                 </div>
                 <button className='submit-order' type='submit'>COMPLETE ORDER</button>
                 <div className="logo-content">
-                    <img src={NortonSecure} alt="Norton secure" />
-                    <img src={VeriSign} alt="Veri sign" />
-                    <img src={McAfee} alt="Mc afee" />
-                    <img src={Comodo} alt="Comodo" />
+                    {logos.map((logo) =>(
+                        <img src={logo} alt={logo}/>
+                    ))}
                 </div>
             </div>
         </form>
