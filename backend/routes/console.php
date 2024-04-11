@@ -14,4 +14,4 @@ Schedule::call(function () {
         $email = new PaymentAlert($oldPayments);
         Mail::to(env('MAIL_PAYMENT_ALERT', 'default@example.com'))->send($email);
     }
-})->everyFifteenSeconds();
+})->everyMinute();

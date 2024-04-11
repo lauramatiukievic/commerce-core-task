@@ -30,7 +30,7 @@ class PaymentAlert extends Mailable
         return (new Envelope)
                     ->subject('Payment Alert')
                     ->from('no-reply@example.com', 'Application Name')
-                    ->to(env('PAYMENT_ALERT_EMAIL', 'alert@example.com'));
+                    ->to(env('MAIL_PAYMENT_ALERT', 'alert@example.com'));
     }
 
     /**
