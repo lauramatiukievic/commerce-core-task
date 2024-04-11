@@ -106,7 +106,7 @@ const Payments = ({ countries, regions }) => {
                 <button className='submit-order' type='submit'>COMPLETE ORDER</button>
                 <div className="logo-content">
                     {logos.map((logo) =>(
-                        <img src={logo} alt={logo}/>
+                        <img key={logo} src={logo} alt={logo}/>
                     ))}
                 </div>
             </div>
